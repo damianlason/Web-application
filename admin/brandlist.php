@@ -5,14 +5,14 @@
 <?php 
 $brand =  new Brand();
 
-/*
+
 // Create Category Class object
- if (isset($_GET['delcat'])) {
- $id = $_GET['delcat']; // get this delcat Id and take this on $id variable 
- $delCat = $cat->delCatById($id);//With Category class object i access method with id  
- 
+if (isset($_GET['delbrand'])) {  // get his delete id from our link 
+	$id = $_GET['delbrand']; // get this id and take it on $id variable 
+	$delBrand = $brand->delBrandById($id); // we have to create this method in our Brand.php Class 
+
 }  
-*/ 
+
 ?>
 
 
@@ -21,8 +21,10 @@ $brand =  new Brand();
 		<h2>Category List</h2>
 		<div class="block">
 		<?php
-		if(isset($delCat)){
-			echo $delCat;
+		if (isset($delBrand)) { 
+			echo  $delBrand;
+
+
 		}
 
 		
