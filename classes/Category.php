@@ -20,8 +20,7 @@ class Category
     }
     public function catInsert($catName)
     {
-        $catName = $this->fm->validation($catName); // Validation for special Characters             
-        $catName =  mysqli_real_escape_string($this->db->link, $catName); // Validation for mysqli   
+        
         if (empty($catName)) {
             $msg = "<span class= 'error'>Category field cannot be !</span>"; // validation for empty 
             return $msg;

@@ -1146,7 +1146,7 @@ td.details {
     background: -webkit-gradient(linear, left top, left bottom, from(#e5edc4), to(#d9e4ac));
     background: -moz-linear-gradient(top,  #e5edc4,  #d9e4ac);
     filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5edc4', endColorstr='#d9e4ac');
-    color: #3f7227;
+    color: #01ec0d;
     text-shadow: 0 1px 0 #fff;
 }
 
