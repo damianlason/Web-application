@@ -1,6 +1,6 @@
 <?php include 'inc/header.php';?>
 <?php include 'inc/sidebar.php';?>
-<?php include '../classes/Brand.php';  ?> // Include Brand Class 
+<?php include '../classes/Brand.php';  ?> 
  <?php
   if (!isset($_GET['brandid'])  || $_GET['brandid'] == NULL ) { // I get this id from brandlist.php page as brandedit.php?brandid 
      echo "<script>window.location = 'catlist.php';  </script>";
