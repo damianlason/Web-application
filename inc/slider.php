@@ -15,7 +15,7 @@
 						<div class="text list_2_of_1">
 							<h2>Acer </h2>
 							<p><?php echo $result['productName']; ?></p>
-							<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>">Add to cart</a></span></div>
+							<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>">Kup teraz </a></span></div>
 						</div>
 					</div>
 			<?php 	}
@@ -34,7 +34,7 @@
 						<div class="text list_2_of_1">
 							<h2>Apple </h2>
 							<p><?php echo $result['productName']; ?></p>
-							<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>">Add to cart</a></span></div>
+							<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>">Kup teraz</a></span></div>
 						</div>
 					</div>
 			<?php 	}
@@ -55,7 +55,7 @@
 						<div class="text list_2_of_1">
 							<h2>Samsung </h2>
 							<p><?php echo $result['productName']; ?></p>
-							<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>">Add to cart</a></span></div>
+							<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>">Kup teraz</a></span></div>
 						</div>
 					</div>
 			<?php 	}
@@ -74,7 +74,7 @@
 						<div class="text list_2_of_1">
 							<h2>Sony </h2>
 							<p><?php echo $result['productName']; ?></p>
-							<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>">Add to cart</a></span></div>
+							<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>">Kup teraz</a></span></div>
 						</div>
 					</div>
 			<?php 	}

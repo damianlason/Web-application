@@ -62,10 +62,10 @@ class Brand
             WHERE brandId = '$id' ";
             $update_row =  $this->db->update($query);
             if ($update_row) {
-                $msg = "<span class= 'success'>Brand has been updated</span>";
+                $msg = "<span class= 'success'>Dane Producenta zaktualizowane</span>";
                 return $msg;
             } else {
-                $msg = "<span class= 'error'>Brand not updated</span>";
+                $msg = "<span class= 'error'>Dane Producenta nie zostały zaktualizowane/span>";
                 return $msg;
             }
         }
@@ -74,10 +74,10 @@ class Brand
         $query = "DELETE FROM tbl_brand WHERE brandId ='$id' ";
         $branddeldata = $this->db->delete($query);
         if ($branddeldata) {
-            $msg = "<span class='success'>Brand Deleted Successfully.</span> ";
+            $msg = "<span class='success'>Producent został usunięty.</span> ";
         return $msg; // return this message 
         }else {
-            $msg = "<span class='error'>Brand Not Deleted .</span> ";
+            $msg = "<span class='error'>Błąd przy usuwaniu producenta.</span> ";
                return $msg; // return this message 
             }
     }

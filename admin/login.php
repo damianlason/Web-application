@@ -23,7 +23,7 @@
 <div class="container">
 	<section id="content">
 		<form action="" method="post">
-			<h1>Admin Login</h1>
+			<h1>Logowanie admina</h1>
 
   <span style="color:red; font-size: 18px;">
   
@@ -35,17 +35,17 @@
    ?>
    </span>	
 			<div>
-				<input type="text" placeholder="Username"  name="adminUser"/>
+				<input type="text" placeholder="Użytkownik "  name="adminUser"/>
 			</div>
 			<div>
-				<input type="password" placeholder="Password"  name="adminPass"/>
+				<input type="password" placeholder="Hasło"  name="adminPass"/>
 			</div>
 			<div>
-				<input type="submit" value="Log in" />
+				<input type="submit" value="Zaloguj" />
 			</div>
 		</form><!-- form -->
 		<div class="button">
-			<a href="#">-----------</a>
+			<a href="#"></a>
 		</div><!-- button -->
 	</section><!-- content -->
 </div><!-- container -->

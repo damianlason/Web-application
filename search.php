@@ -2,10 +2,10 @@
 
 
  <?php
- if (!isset($_GET['catId'])  || $_GET['catId'] == NULL ) {
+ if (!isset($_GET['search'])  || $_GET['search'] == NULL ) {
 	echo "<script>window.location = '404.php';  </script>";
  }else {
-   $id = $_GET['catId']; // here i get this id and take this with one variable. 
+   $search = $_GET['search']; // here i get this id and take this with one variable. 
  }
 ?>
 
@@ -14,24 +14,18 @@
 	<div class="content">
 		<div class="content_top">
 			<div class="heading">
-			<?php
-			$productbycat = $pd->productByOnlyCat($id); // Create this method in our Product.php Class 
-			if ($productbycat) {
-				while ($result = $productbycat->fetch_assoc()) {
+			
+            
 
-			?>
-
-				<h3>Ostatnio dodane z kategorii <?php echo $result['catName']; ?></h3>
-				<?php }} ?>
 			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="section group">
 
 			<?php
-			$productbycat = $pd->productByCat($id); // Create this method in our Product.php Class 
-			if ($productbycat) {
-				while ($result = $productbycat->fetch_assoc()) {
+			$productbysearch = $pd->productBySearch($search); // Create this method in our Product.php Class 
+			if ($productbysearch) {
+				while ($result = $productbysearch->fetch_assoc()) {
 
 			?>
 					<div class="grid_1_of_4 images_1_of_4">
@@ -43,11 +37,10 @@
 						<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>" class="details">Details</a></span></div>
 					</div>
 			<?php    }
-			} else {
-				header("Location:404.php");
-				// echo "Products of this category are not available";
+			} else { ?>
+				<p> Twój produkt nie został znaleziony </p>
 
-			}  ?>
+			<?php }  ?>
 
 		</div>
 	</div>

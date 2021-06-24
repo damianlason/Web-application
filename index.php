@@ -8,7 +8,7 @@
 	<div class="content">
 		<div class="content_top">
 			<div class="heading">
-				<h3>Feature Products</h3>
+				<h3>Polecane</h3>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -24,8 +24,8 @@
 							<img src="admin/<?php echo $result['image']; ?>" alt="" /></a>
 						<h2><?php echo $result['productName']; ?> </h2>
 						<p><?php echo $fm->textShorten($result['body'], 60); ?></p>
-						<p><span class="price">$<?php echo $result['price']; ?></span></p>
-						<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>" class="details">Details</a></span></div>
+						<p><span class="price"><?php echo $result['price']; ?> PLN</span></p>
+						<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>" class="details">Szczegóły</a></span></div>
 					</div>
 
 			<?php  }
@@ -33,7 +33,7 @@
 		</div>
 		<div class="content_bottom">
 			<div class="heading">
-				<h3>New Products</h3>
+				<h3>Nowe produkty</h3>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -50,8 +50,8 @@
 							<img src="admin/<?php echo $result['image']; ?>" alt="" /></a>
 						<h2><?php echo $result['productName']; ?> </h2>
 
-						<p><span class="price">$<?php echo $result['price']; ?></span></p>
-						<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>" class="details">Details</a></span></div>
+						<p><span class="price"><?php echo $result['price']; ?> PLN</span></p>
+						<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>" class="details">Szczegóły</a></span></div>
 			</div>
 			<?php  }  }  ?>
 		</div>

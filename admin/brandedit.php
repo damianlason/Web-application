@@ -19,7 +19,7 @@
 ?>
         <div class="grid_10">
             <div class="box round first grid">
-                <h2>Update Category</h2>
+                <h2>Aktualizuj</h2>
                <div class="block copyblock"> 
               <?php 
                     if (isset($updateBrand)) { // showing the return message from Brand class 
@@ -42,7 +42,7 @@
                         </tr>
 						<tr> 
                             <td>
-                                <input type="submit" name="submit" Value="Update" />
+                                <input type="submit" name="submit" Value="Aktualizuj" />
                             </td>
                         </tr>
                     </table>

@@ -18,7 +18,7 @@ if (isset($_GET['delbrand'])) {  // get his delete id from our link
 
 <div class="grid_10">
 	<div class="box round first grid">
-		<h2>Category List</h2>
+		<h2>Lista producentów</h2>
 		<div class="block">
 		<?php
 		if (isset($delBrand)) { 
@@ -35,9 +35,9 @@ if (isset($_GET['delbrand'])) {  // get his delete id from our link
 			<table class="data display datatable" id="example">
 				<thead>
 					<tr>
-						<th>Serial No.</th>
-						<th>Brand  Name</th>
-						<th>Action</th>
+						<th>Numer</th>
+						<th>Nazwa producenta</th>
+						<th>Opcje</th>
 					</tr>
 				</thead>
 				<tbody>

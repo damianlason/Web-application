@@ -1,7 +1,7 @@
 <?php
 $filepath = realpath(dirname(__FILE__));
-include_once ($filepath.'/../lib/Database.php');
-include_once ($filepath.'/../helpers/Format.php');
+include_once($filepath . '/../lib/Database.php');
+include_once($filepath . '/../helpers/Format.php');
 
 
 
@@ -148,14 +148,15 @@ class Product
                     $msg = "<span class='error'>Product Not Updated .</span> ";
                     return $msg; // return This Message 
                 }
-            }//$dellink = &delImg['image'];
+            } //$dellink = &delImg['image'];
         }
     }
-    public function delProById($id){
+    public function delProById($id)
+    {
         $query = "SELECT * FROM tbl_product WHERE productId = '$id' ";
         $getData = $this->db->select($query);
-        if ($getData){
-            while ($delImg = $getData->fetch_assoc()){
+        if ($getData) {
+            while ($delImg = $getData->fetch_assoc()) {
                 $dellink = $delImg['image'];
                 unlink($dellink);
             }
@@ -171,19 +172,21 @@ class Product
         }
     }
 
-    public function getFeaturedProduct() {
+    public function getFeaturedProduct()
+    {
         $query = "SELECT * FROM tbl_product WHERE type='0' ORDER BY productId DESC LIMIT 6 ";
-      $result = $this->db->select($query);
-      return $result;
-   }
-   public function getNewProduct(){
-    $query = "SELECT * FROM tbl_product ORDER BY productId DESC LIMIT 4 ";
-    $result = $this->db->select($query);
-    return $result;
-
-   }
-   public function getSingleProduct($id){
-    $query = "SELECT tbl_product.*, tbl_category.catName, tbl_brand.brandName
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function getNewProduct()
+    {
+        $query = "SELECT * FROM tbl_product ORDER BY productId DESC LIMIT 4 ";
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function getSingleProduct($id)
+    {
+        $query = "SELECT tbl_product.*, tbl_category.catName, tbl_brand.brandName
     FROM tbl_product
     INNER JOIN tbl_category
     ON tbl_product.catId = tbl_category.catId
@@ -191,34 +194,58 @@ class Product
     ON tbl_product.brandId = tbl_brand.brandId
     AND tbl_product.productId = $id
     ORDER BY tbl_product.productId DESC";
-$result =  $this->db->select($query);
-return $result;  // i return this result 
+        $result =  $this->db->select($query);
+        return $result;  // i return this result 
 
-   }
-   public function latestFromAcer(){
-    $query = "SELECT * FROM tbl_product WHERE brandId ='9' ORDER BY productId DESC LIMIT 1 ";
-           $result = $this->db->select($query);
-           return $result;
-   }
-   public function latestFromApple(){
-    $query = "SELECT * FROM tbl_product WHERE brandId ='10' ORDER BY productId DESC LIMIT 1 ";
-           $result = $this->db->select($query);
-           return $result;
-   }
-   public function latestFromSamsung(){
-    $query = "SELECT * FROM tbl_product WHERE brandId ='11' ORDER BY productId DESC LIMIT 1 ";
-           $result = $this->db->select($query);
-           return $result;
-   }
-   public function latestFromSony(){
-    $query = "SELECT * FROM tbl_product WHERE brandId ='12' ORDER BY productId DESC LIMIT 1 ";
-           $result = $this->db->select($query);
-           return $result;
-   }
+    }
+    
+
+    public function latestFromAcer()
+    {
+        $query = "SELECT * FROM tbl_product WHERE brandId ='9' ORDER BY productId DESC LIMIT 1 ";
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function latestFromApple()
+    {
+        $query = "SELECT * FROM tbl_product WHERE brandId ='10' ORDER BY productId DESC LIMIT 1 ";
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function latestFromSamsung()
+    {
+        $query = "SELECT * FROM tbl_product WHERE brandId ='11' ORDER BY productId DESC LIMIT 1 ";
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function latestFromSony()
+    {
+        $query = "SELECT * FROM tbl_product WHERE brandId ='12' ORDER BY productId DESC LIMIT 1 ";
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function productByCat($id){
+        $catId        =  mysqli_real_escape_string($this->db->link, $id);
+        $query = "SELECT * FROM tbl_product WHERE catId ='$catId' ";
+        $result = $this->db->select($query);
+        return $result;
 
 
+    }
+    public function productByOnlyCat($id){
+        $query = "SELECT * FROM tbl_category WHERE catId ='$id' ";
+        $result = $this->db->select($query);
+        return $result;
+    }
+
+    public function productBySearch($search){
+        $query = "SELECT * FROM tbl_product WHERE productName LIKE '%$search%' OR body LIKE '%$search%' ";
+        $result = $this->db->select($query);
+        return $result;
+    }
 
 }
+
 
 
 

@@ -15,7 +15,7 @@ $cat =  new Category();  // Create Category Class object
 
 <div class="grid_10">
 	<div class="box round first grid">
-		<h2>Category List</h2>
+		<h2>Lista kategorii</h2>
 		<div class="block">
 		<?php
 		if(isset($delCat)){
@@ -30,9 +30,9 @@ $cat =  new Category();  // Create Category Class object
 			<table class="data display datatable" id="example">
 				<thead>
 					<tr>
-						<th>Serial No.</th>
-						<th>Category Name</th>
-						<th>Action</th>
+						<th>Numer</th>
+						<th>Nazwa kategorii</th>
+						<th>Opcje</th>
 					</tr>
 				</thead>
 				<tbody>
