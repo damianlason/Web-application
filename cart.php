@@ -34,7 +34,7 @@ if (!isset($_GET['id'])) {
 	<div class="content">
 		<div class="cartoption">
 			<div class="cartpage">
-				<h2>Your Cart</h2>
+				<h2>Kosz</h2>
 				<?php
 				if (isset($updateCart)) {
 					echo $updateCart;
@@ -46,13 +46,13 @@ if (!isset($_GET['id'])) {
 
 				<table class="tblone">
 					<tr>
-						<th width="5%">Serial number </th>
-						<th width="30%">Product Name</th>
-						<th width="10%">Image</th>
-						<th width="15%">Price</th>
-						<th width="15%">Quantity</th>
-						<th width="15%">Total Price</th>
-						<th width="10%">Action</th>
+						<th width="5%">Numer </th>
+						<th width="30%">Nazwa produktu</th>
+						<th width="10%">Podgląd</th>
+						<th width="15%">Cena</th>
+						<th width="15%">Ilość</th>
+						<th width="15%">Cena </th>
+						<th width="10%">Usuń</th>
 					</tr>
 					<?php
 					$getPro = $ct->getCartProduct();  // Create this method in our Cart.php Class page. 
@@ -107,22 +107,22 @@ if (!isset($_GET['id'])) {
 
 					<table style="float:right;text-align:left;" width="40%">
 						<tr>
-							<th>Sub Total : </th>
-							<td> <?php echo $sum;  ?> PLN</td>
+							<th>Do zapłaty : </th>
+								<td> <?php echo $sum;  ?> PLN</td>
 						</tr>
 						<tr>
-							<th>VAT : </th>
+							<!-- <th>VAT : </th>
 							<td>
 								23%
-							</td>
+							</td> -->
 						</tr>
 						<tr>
-							<th>Grand Total :</th>
+							<!-- <th>Całość :</th>
 							<td><?php
 								$vat = $sum * 0.23;
 								$gtotal = $sum + $vat;
 								echo $gtotal;
-								?> PLN</td>
+								?> </td>  This will be only used if shop operates in a different country where VAT is not added to the actual price-->  
 						</tr>
 					</table>
 

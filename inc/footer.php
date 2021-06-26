@@ -1,7 +1,7 @@
 <div class="footer">
    	  <div class="wrapper">	
 	     <div class="section group">
-				<div class="col_1_of_4 span_1_of_4">
+				<!-- <div class="col_1_of_4 span_1_of_4">
 						<h4>Information</h4>
 						<ul>
 						<li><a href="#">About Us</a></li>
@@ -36,8 +36,8 @@
 						<ul>
 							<li><span>support@myagdmyrtv</span></li>
 							<li><span>www.myagdmyrtv.pl</span></li>
-						</ul>
-						<div class="social-icons">
+						</ul> -->
+						<!-- <div class="social-icons">
 							<h4>Follow Us</h4>
 					   		  <ul>
 							      <li class="facebook"><a href="#" target="_blank"> </a></li>
@@ -46,7 +46,7 @@
 							      <li class="contact"><a href="#" target="_blank"> </a></li>
 							      <div class="clear"></div>
 						     </ul>
-   	 					</div>
+   	 					</div> -->
 				</div>
 			</div>
 			<div class="copy_right">

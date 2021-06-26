@@ -14,7 +14,7 @@
 
         <div class="grid_10">
             <div class="box round first grid">
-                <h2>Add new brand</h2>
+                <h2>Dodaj nowego producenta</h2>
                <div class="block copyblock"> 
         <?php
             if (isset($insertBrand)){
@@ -26,12 +26,12 @@
                     <table class="form">					
                         <tr>
                             <td>  
-                              <input type="text" name="brandName" placeholder="Enter Category Name..." class="medium" /> 
+                              <input type="text" name="brandName" placeholder="Wprowadź producenta..." class="medium" /> 
                             </td>
                         </tr>
 						<tr> 
                             <td>
-                                <input type="submit" name="submit" Value="Save" />
+                                <input type="submit" name="submit" Value="Dodaj" />
                             </td>
                         </tr>
                     </table>

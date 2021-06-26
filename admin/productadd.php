@@ -60,8 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                                         <option value=" <?php echo $result['catId']; ?>"> <?php echo $result['catName'];   ?></option>
                                 <?php }  //this will display Categories and names
                                 } ?>
-                                <option value="2">Category Two</option>
-                                <option value="3">Category Three</option>
+                               
                             </select>
                         </td>
                     </tr>
@@ -87,8 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                                         <option value="<?php echo $result['brandId']   ?>"><?php echo $result['brandName'];  ?></option>
                                 <?php }
                                 } ?>
-                                <option value="2">Brand Two</option>
-                                <option value="3">Brand Three</option>
+                                
                             </select>
                         </td>
                     </tr>

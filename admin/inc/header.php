@@ -70,8 +70,8 @@ Session::checkSession();
                     ?>
 
 
-                            <li>Hello <?php echo Session::get('adminName'); ?> </li>
-                            <li><a href="?action=logout">Logout</a></li>
+                            <li>Admin <?php echo Session::get('adminName'); ?> </li>
+                            <li><a href="?action=logout">Wyloguj</a></li>
                         </ul>
                     </div>
                 </div>

@@ -27,7 +27,7 @@ class Adminlogin {
         $adminPass = mysqli_real_escape_string($this->db->link, $adminPass);
 
         if (empty($adminUser) || empty($adminPass)){ // if password or user name is empty return message
-            $loginmsg = "user name or password cannot be empty";
+            $loginmsg = "Pole Użytkownika  i hasło nie mogą być puste";
             return $loginmsg;
         }else {                   //if not empty do this
             $query = "SELECT * FROM tbl_admin WHERE adminUser='$adminUser' AND adminPass='$adminPass' ";
@@ -41,7 +41,7 @@ class Adminlogin {
                 header("Location:dashboard.php");
 
             }else {
-                $loginmsg = "username or password inc";
+                $loginmsg = "Błędna nazwa lub hasło";
                 return $loginmsg;
             }
         }

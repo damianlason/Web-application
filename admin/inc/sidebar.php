@@ -2,7 +2,7 @@
     <div class="box sidemenu">
         <div class="block" id="section-menu">
             <ul class="section menu">
-               <li><a class="menuitem">Site Option</a>
+               <li><a class="menuitem">Opcje</a>
                     <ul class="submenu">
                          
                         <li><a href="social.php">Social Media</a></li>
@@ -19,23 +19,23 @@
                     </ul>
                 </li>
 
-                <li><a class="menuitem">Category Option</a>
+                <li><a class="menuitem">Kategorie</a>
                     <ul class="submenu">
-                        <li><a href="catadd.php">Add category</a> </li>
-                        <li><a href="catlist.php">Category list</a> </li>
+                        <li><a href="catadd.php">Dodaj kategorie</a> </li>
+                        <li><a href="catlist.php">Lista kategorii</a> </li>
                     </ul>
                 </li>
 
-                <li><a class="menuitem">Brand Option</a>
+                <li><a class="menuitem">Producenci </a>
                     <ul class="submenu">
-                        <li><a href="brandadd.php">Add Brand</a> </li>
-                        <li><a href="brandlist.php">Brand List</a> </li>
+                        <li><a href="brandadd.php">Dodaj producenta</a> </li>
+                        <li><a href="brandlist.php">Lista producentów</a> </li>
                     </ul>
                 </li>
-                <li><a class="menuitem">Product Option</a>
+                <li><a class="menuitem">Produkty</a>
                     <ul class="submenu">
-                        <li><a href="productadd.php">Add Product</a> </li>
-                        <li><a href="productlist.php">Product List</a> </li>
+                        <li><a href="productadd.php">Dodaj produkt</a> </li>
+                        <li><a href="productlist.php">Lista produktów</a> </li>
                     </ul>
                 </li>
             </ul>
