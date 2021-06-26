@@ -19,16 +19,16 @@ class Brand
         $brandName = $this->fm->validation($brandName); // Validation for special Characters             
         $brandName =  mysqli_real_escape_string($this->db->link, $brandName); // Validation for mysqli   
         if (empty($brandName)) {
-            $msg = "<span class= 'error'>Brand field must not be empty !</span>"; // validation for empty 
+            $msg = "<span class= 'error'>Pole nie może być puste!</span>"; // validation for empty 
             return $msg;
         } else {
             $query = "INSERT INTO tbl_brand(brandName) VALUES ('$brandName') ";
             $brandinsert = $this->db->insert($query);
             if ($brandinsert) {
-                $msg = "<span class= 'success'>Brand Inserted Successfully.</span>";
+                $msg = "<span class= 'success'>Producent został dodany</span>";
                 return $msg;
             } else {
-                $msg = "<span class= 'error'>Brand  not Inserted Successfully.</span>";
+                $msg = "<span class= 'error'>Producent nie został dodany poprawnie</span>";
                 return $msg;
             }
             // else its will insert data in to the database with insert query.
@@ -53,7 +53,7 @@ class Brand
         $brandName =  mysqli_real_escape_string($this->db->link, $brandName); // Validation for mysqli   
         $id =  mysqli_real_escape_string($this->db->link, $id); // Validation for mysqli   
         if (empty($brandName)) {
-            $msg = "<span class= 'error'>Brand field must not be empty</span>";
+            $msg = "<span class= 'error'>Pole nie może być puste!</span>";
             return $msg;
         } else {
             $query = "UPDATE tbl_brand

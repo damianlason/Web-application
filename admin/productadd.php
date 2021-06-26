@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
 
 <div class="grid_10">
     <div class="box round first grid">
-        <h2>Add New Product</h2>
+        <h2>Dodaj nowy produkt</h2>
         <div class="block">
             <?php //return  message   in our product add page 
             if (isset($insertProduct)) {
@@ -33,19 +33,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
 
                     <tr>
                         <td>
-                            <label>Name</label>
+                            <label>Nazwa</label>
                         </td>
                         <td>
-                            <input type="text" name="productName" placeholder="Enter Product Name..." class="medium" />
+                            <input type="text" name="productName" placeholder="Wprowadź nazwę produktu" class="medium" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label>Category</label>
+                            <label>Kategoria</label>
                         </td>
                         <td>
                             <select id="select" name="catId">
-                                <option>Select Category</option>
+                                <option>Wybierz kategorie</option>
                                 <?php
                                 $cat = new Category(); //creating object for this class
                                 $getCat = $cat->getAllCat();  //get category and access method getAllCat to read data
@@ -66,11 +66,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                     </tr>
                     <tr>
                         <td>
-                            <label>Brand</label>
+                            <label>Producent</label>
                         </td>
                         <td>
                             <select id="select" name="brandId">
-                                <option>Select Brand</option>
+                                <option>Wybierz producenta</option>
                                 <?php
                                 $brand = new Brand(); // what happenes here is analogically same as in line 29
 
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
 
                     <tr>
                         <td style="vertical-align: top; padding-top: 9px;">
-                            <label>Description</label>
+                            <label>Opis</label>
                         </td>
                         <td>
                             <textarea class="tinymce" name="body"></textarea>
@@ -104,13 +104,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                             <label>Price</label>
                         </td>
                         <td>
-                            <input type="text" name="price" placeholder="Enter Price..." class="medium" />
+                            <input type="text" name="price" placeholder="Wprowadź cene..." class="medium" />
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <label>Upload Image</label>
+                            <label>Dodaj zdjęcie</label>
                         </td>
                         <td>
                             <input type="file" name="image" />
@@ -119,13 +119,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
 
                     <tr>
                         <td>
-                            <label>Product Type</label>
+                            <label>Typ produktu</label>
                         </td>
                         <td>
                             <select id="select" name="type">
-                                <option>Select Type</option>
-                                <option value="0">Featured</option>
-                                <option value="1">General</option>
+                                <option>Typ</option>
+                                <option value="0">Okazja</option>
+                                <option value="1">Główne</option>
                             </select>
                         </td>
                     </tr>
@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                     <tr>
                         <td></td>
                         <td>
-                            <input type="submit" name="submit" Value="Save" />
+                            <input type="submit" name="submit" Value="Dodaj" />
                         </td>
                     </tr>
                 </table>

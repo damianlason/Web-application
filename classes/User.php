@@ -54,7 +54,7 @@ class User
         $email       =  mysqli_real_escape_string($this->db->link, $data['email']);
         $pass        =  mysqli_real_escape_string($this->db->link, md5($data['pass']));
         if ($email == ""  || $pass == "") {
-            $msg = "<span class='error'>Field Must Not be empty .</span> ";
+            $msg = "<span class='error'>Pole nie może być puste!</span> ";
             return $msg; // return message 
         }
 
@@ -67,7 +67,7 @@ class User
             Session::set("cmrName", $value['nameAndSurname']);
             header("Location:cart.php"); // redirect to order.php page after login 
         } else {
-            $msg = "<span class='error'>Email Or Password Not Matched</span> ";
+            $msg = "<span class='error'>Nieprawidłowe hasło lub email</span> ";
             return $msg; // return message 
         }
     }
@@ -95,7 +95,7 @@ class User
          $email       =  mysqli_real_escape_string($this->db->link, $data['email'] );
           
       if ($nameAndSurname == "" || $address == "" || $city == "" || $country == "" || $zip == "" || $phone == ""  || $email == "" ) {
-             $msg = "<span class='error'>Field Must Not be empty .</span> ";
+             $msg = "<span class='error'>Pole nie może być puste!</span> ";
                     return $msg;
          } else { 
              $query = "UPDATE tbl_customer
@@ -110,10 +110,10 @@ class User
                 WHERE id    = '$cmrId' "; 
                 $update_row  = $this->db->update($query);
                 if ($update_row) {
-                    $msg = "<span class='success'>Customer Data Updated Successfully.</span> ";
+                    $msg = "<span class='success'>Dane zostały zaktualizowane</span> ";
                     return $msg;// return some message
                 }else {
-                    $msg = "<span class='error'>Customer Data Not Updated .</span> ";
+                    $msg = "<span class='error'>Dane nie zostały zaktualizowane</span> ";
                     return $msg; // return some message 
                 }
           }
