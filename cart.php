@@ -34,7 +34,7 @@ if (!isset($_GET['id'])) {
 	<div class="content">
 		<div class="cartoption">
 			<div class="cartpage">
-				<h2>Kosz</h2>
+				<h2>Koszyk</h2>
 				<?php
 				if (isset($updateCart)) {
 					echo $updateCart;
@@ -46,12 +46,12 @@ if (!isset($_GET['id'])) {
 
 				<table class="tblone">
 					<tr>
-						<th width="5%">Numer </th>
+						<th width="5%">Lp.</th>
 						<th width="30%">Nazwa produktu</th>
 						<th width="10%">Podgląd</th>
 						<th width="15%">Cena</th>
 						<th width="15%">Ilość</th>
-						<th width="15%">Cena </th>
+						<th width="15%">Kwota</th>
 						<th width="10%">Usuń</th>
 					</tr>
 					<?php
@@ -72,7 +72,7 @@ if (!isset($_GET['id'])) {
 									<form action="" method="post">
 										<input type="hidden" name="cartId" value="<?php echo $result['cartId']; ?>" />
 										<input type="number" name="quantity" value="<?php echo $result['quantity']; ?>" />
-										<input type="submit" name="submit" value="Update" />
+										<input type="submit" name="submit" value="Przelicz" />
 									</form>
 								</td>
 								<td>
@@ -107,7 +107,7 @@ if (!isset($_GET['id'])) {
 
 					<table style="float:right;text-align:left;" width="40%">
 						<tr>
-							<th>Do zapłaty : </th>
+							<th>Wartość zamówienia: </th>
 								<td> <?php echo $sum;  ?> PLN</td>
 						</tr>
 						<tr>

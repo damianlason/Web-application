@@ -39,7 +39,7 @@ body{
 }
 .logo{
 	float:left;
-	width:33%;
+	width:10%;
 }
 /**** Header Top Right ****/
 .header_top_right{
@@ -2474,4 +2474,8 @@ p.terms {
 		width:92%;
 		padding:4%;
 	}
+}
+
+.productImage{
+	max-width: 100%;
 }

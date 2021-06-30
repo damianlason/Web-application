@@ -32,7 +32,7 @@ if ($login == true){
 
 			<form action=" " method="post">
 				<input name="email" placeholder="Email" type="text">
-				<input name="pass" placeholder="Password" type="pasword">
+				<input name="pass" placeholder="Password" type="password">
 				<div class="buttons"><div><button class="grey" name="login">Zaloguj</button></div>
 			</div>
 			</form>
@@ -53,9 +53,7 @@ if ($login == true){
 		?>
 
 
-
-
-		<div class="register_account">
+<div class="register_account">
 			<h3>Rejestracja</h3>
 			<form action=" " method="post">
 				<form>
@@ -91,7 +89,7 @@ if ($login == true){
 									</div>
 
 									<div>
-										<input type="text" name="pass" placeholder="hasło" />
+										<input type="password" name="pass" placeholder="hasło" />
 									</div>
 								</td>
 							</tr>
@@ -104,6 +102,8 @@ if ($login == true){
 					<div class="clear"></div>
 				</form>
 		</div>
+
+
 		<div class="clear"></div>
 	</div>
 </div>
