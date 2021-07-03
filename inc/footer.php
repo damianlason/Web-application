@@ -2,13 +2,13 @@
    	  <div class="wrapper">	
 	     <div class="section group">
 				 <div class="col_1_of_4 span_1_of_4">
-						<h4>Information</h4>
+						<h4>Informacje</h4>
 						<ul>
-						<li><a href="#">About Us</a></li>
+						<li><a href="#">O nas</a></li>
 						<li><a href="#">Customer Service</a></li>
 						<li><a href="#"><span>Advanced Search</span></a></li>
 						<li><a href="#">Orders and Returns</a></li>
-						<li><a href="#"><span>Contact Us</span></a></li>
+						<li><a href="contact.php"><span>Kontakt</span></a></li>
 						</ul>
 					</div>
 				<div class="col_1_of_4 span_1_of_4">
@@ -32,7 +32,7 @@
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
-					<h4>Contact</h4>
+					<h4>Kontakt</h4>
 						<ul>
 							<li><span>support@myagdmyrtv</span></li>
 							<li><span>www.myagdmyrtv.pl</span></li>
@@ -50,7 +50,7 @@
 				</div>
 			</div>
 			<div class="copy_right">
-				<p>myagdmyrtv &amp; All rights Reseverd </p>
+				<p>Myagdmyrtv &amp; All rights Reseverd </p>
 		   </div>
      </div>
     </div>
@@ -73,9 +73,7 @@
     <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
 	  <script defer src="js/jquery.flexslider.js"></script>
 	  <script type="text/javascript">
-		$(function(){
-		  SyntaxHighlighter.all();
-		});
+
 		$(window).load(function(){
 		  $('.flexslider').flexslider({
 			animation: "slide",

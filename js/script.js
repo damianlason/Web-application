@@ -32,7 +32,7 @@ $(window).load(function(){
 				createCanvasOverlay(this);
 			});
 		}
-		
+
 		window.console && window.console.timeEnd && console.timeEnd('Generated In');
 		
 		$('#slideshow .arrow').click(function(){

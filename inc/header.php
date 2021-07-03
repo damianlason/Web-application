@@ -104,6 +104,7 @@ $cmr = new User();
 
 					<?php } else { ?>
 
+
 						<a href="?cid=<?php Session::get('cmrId') ?>">Wyloguj</a> 
 
 
