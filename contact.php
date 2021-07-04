@@ -5,7 +5,7 @@
     	<div class="support">
   			<div class="support_desc">
   				<h3>Kontakt</h3>
-  				<p>Aby się z nami skontaktować, użyć skorzystaj z poniższego formularza. Odpowiemy najszybciej jak to będzie możliwe!</p>
+  				<p>Aby się z nami skontaktować skorzystaj z poniższego formularza. Odpowiemy najszybciej jak to będzie możliwe!</p>
   			</div>
   				<img src="web/images/contact.png" alt="" />
   			<div class="clear"></div>
