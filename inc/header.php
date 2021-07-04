@@ -125,14 +125,14 @@ $cmr = new User();
 		</div>
 		<div class="menu">
 			<ul id="dc_mega-menu-orange" class="dc_mm-orange">
-				<li><a href="index.php">Główna</a></li>
+				<li><a href="index.php">Strona główna</a></li>
 				<li><a href="products.php">Produkty</a> </li>
 
 				<?php
 				  $chkCart = $ct->checkCartTable();
 				if ($chkCart) { ?>
 					<li><a href="cart.php">Koszyk</a></li>
-					<li><a href="payment.php">Platnosc</a></li>
+					<li><a href="payment.php">Płatność</a></li>
 
 				<?php } ?>
 

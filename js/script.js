@@ -33,8 +33,7 @@ $(window).load(function(){
 			});
 		}
 
-		window.console && window.console.timeEnd && console.timeEnd('Generated In');
-		
+
 		$('#slideshow .arrow').click(function(){
 			var li			= slides.eq(current),
 				canvas		= li.find('canvas'),

@@ -1394,7 +1394,7 @@ p.note{
   width: 100%;
 }
 .tblone th {
-  background: #666 none repeat scroll 0 0;
+  background: #0080ff none repeat scroll 0 0;
   color: #fff;
   font-size: 20px;
   padding: 5px 8px;
@@ -1410,7 +1410,7 @@ table.tblone input[type="number"] {
   width: 60px;
 }
 table.tblone input[type="submit"] {
-  background: #333 none repeat scroll 0 0;
+  background: #0080ff none repeat scroll 0 0;
   border: 1px solid #000;
   border-radius: 3px;
   color: #fff;
@@ -1474,27 +1474,21 @@ table.tblone img {
 			-o-box-shadow: inset 0px 0px 3px #999;
 			-webkit-appearance:none;
 }
+
+.contact-form input[type="text"]:focus,.contact-form textarea:focus{
+	border: 1px solid #0080ff;
+}
 .contact-form textarea{
 		resize:none;
 		height:120px;		
 }
 .contact-form input[type="submit"]{
-	padding:7px 25px;
-	cursor:pointer;
-	background:#FFF url(../images/large-button-overlay.png);
-    font-family:Arial, Helvetica, sans-serif;
     position:absolute;
     right:0;
-    border: 1px solid #ccc;
-	color: #555 !important;
-	font-size:1em;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+	height: 45px;
+	width: 100px;
 }
-.contact-form input[type="submit"]:hover{
-	background-color: #EEE;
-	border-color: #B8B5B5;
-	color: #444 !important;
-}
+
 .contact-form input[type="submit"]:active{
 	background-color:#FFF;  
 }
@@ -2475,4 +2469,33 @@ p.terms {
 
 .images_1_of_4 .product-card .product-details .product-name{
 	color: #0080ff; !important;
+}
+
+.blue{
+	color: #0080ff;
+}
+
+.blue-button{
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 20px;
+	background: #0080ff;
+	line-height: 15px;
+	text-transform: none;
+	color: black;
+	text-decoration: none !important;
+	display: inline-block;
+	cursor: pointer !important;
+	margin: 0 2px;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.blue-button:hover{
+	color: white;
+	background: #70389C;
 }

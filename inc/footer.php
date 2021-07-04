@@ -50,7 +50,7 @@
 				</div>
 			</div>
 			<div class="copy_right">
-				<p>Myagdmyrtv &amp; All rights Reseverd </p>
+                <p><span class="blue">Myagdmyrtv</span> &amp; All rights Reseverd </p>
 		   </div>
      </div>
     </div>
