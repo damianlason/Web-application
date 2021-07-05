@@ -132,9 +132,6 @@ if (!isset($_GET['id'])) {
 				} ?>
 			</div>
 			<div class="shopping">
-				<div class="shopleft">
-					<a href="index.php"> <img style="float: right;" src="images/shop.png" alt="" /></a>
-				</div>
 				<div class="shopright">
 					<a href="payment.php"> <img style="float: right;" src="images/check.png"  alt="" /></a>
 				</div>

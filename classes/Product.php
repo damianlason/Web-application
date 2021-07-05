@@ -49,10 +49,10 @@ class Product
 
             $inserted_row = $this->db->insert($query);
             if ($inserted_row) {
-                $msg = "<span class='success'>Product Inserted Successfully.</span> ";
+                $msg = "<span class='success'>Produkt został dodany</span> ";
                 return $msg; // return message 
             } else {
-                $msg = "<span class='error'>Product Not Inserted .</span> ";
+                $msg = "<span class='error'>Produkt nie został dodany</span> ";
                 return $msg; // return message 
             }
         }
@@ -98,14 +98,14 @@ class Product
         $unique_image = substr(md5(time()), 0, 10) . '.' . $file_ext;
         $uploaded_image = "upload/" . $unique_image;
         if ($productName == "" || $catId == "" || $brandId == "" || $body == "" || $price == "" || $type == "") {
-            $msg = "<span class='error'>Field Must Not be empty .</span> ";
+            $msg = "<span class='error'>Pole nie może być puste</span> ";
             return $msg;
         } else {
             if (!empty($file_name)) {
                 if ($file_size > 1054589) {
-                    echo "<span class='error'>Image Size should be less then 1MB .</span>";
+                    echo "<span class='error'>Zdjęcie powinno być mniejsze niż 1 MB</span>";
                 } elseif (in_array($file_ext, $permited) === false) {
-                    echo "<span class='error'> You can Upload Only" . implode(',', $permited) . "</span>";
+                    echo "<span class='error'> Możesz wstawić tylko " . implode(',', $permited) . "</span>";
                 } else {
                     move_uploaded_file($file_temp, $uploaded_image);
                     $query = "UPDATE tbl_product
@@ -121,10 +121,10 @@ class Product
 
                     $updated_row = $this->db->update($query);
                     if ($updated_row) {
-                        $msg = "<span class='success'>Product Updated Successfully.</span> ";
+                        $msg = "<span class='success'>Produkt został zaktualizowany</span> ";
                         return $msg;
                     } else {
-                        $msg = "<span class='error'>Product Not Updated .</span> ";
+                        $msg = "<span class='error'>Produkt nie został zaktualizowany</span> ";
                         return $msg;
                     }
                 }
@@ -142,10 +142,10 @@ class Product
 
                 $updated_row = $this->db->update($query);
                 if ($updated_row) {
-                    $msg = "<span class='success'>Product Updated Successfully.</span> ";
+                    $msg = "<span class='success'>Produkt został zaktualizowany</span> ";
                     return $msg; // return This Message 
                 } else {
-                    $msg = "<span class='error'>Product Not Updated .</span> ";
+                    $msg = "<span class='error'>Produkt nie został zaktualizowany</span> ";
                     return $msg; // return This Message 
                 }
             } //$dellink = &delImg['image'];
@@ -164,10 +164,10 @@ class Product
         $delquery = "DELETE FROM tbl_product WHERE productId = '$id' ";
         $deldata = $this->db->delete($delquery);
         if ($deldata) {
-            $msg = "<span class='success'>Product Deleted Successfully.</span> ";
+            $msg = "<span class='success'>Produkt został usunięty</span> ";
             return $msg; // return this Message 
         } else {
-            $msg = "<span class='error'>Product Not Deleted .</span> ";
+            $msg = "<span class='error'>Produkt nie został usunięty</span> ";
             return $msg; // return this Message 
         }
     }

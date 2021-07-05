@@ -73,9 +73,9 @@ $fm = new Format();
 					<td><?php
 					
 					if($result['type'] == 0){
-						echo "Featured";
+						echo "Polecany";
 					}else {
-						echo "General";
+						echo "Główny";
 					}
 					
 					?></td>

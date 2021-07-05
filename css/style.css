@@ -1420,7 +1420,7 @@ p.note{
 .tblone td{padding:10px;text-align:center;}
 
 table.tblone tr:nth-child(2n+1){background:#fff;height:30px;}
-table.tblone tr:nth-child(2n){background:#fdf0f1;height:30px;}
+table.tblone tr:nth-child(2n){background:rgb(169, 202, 232);height:30px;}
 table.tblone input[type="number"] {
   border: 1px solid #ddd;
   padding: 2px;
@@ -1451,14 +1451,15 @@ table.tblone img {
 .shopleft, .shopleft {
   float: left;
   text-align: center;
-  width: 610px;
+  width: 150px;
 }
 .shopleft img{outline:none}
 .shopleft a,.shopright a{outline:none}
 
 .shopright img {
-  width: 270px;
-  outline:none
+  width: 150px;
+  outline:none;
+  margin-right: 15px;
 }
 
 .contact-form{
