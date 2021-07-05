@@ -4,9 +4,8 @@
     <div class="content">
     	<div class="support">
   			<div class="support_desc">
-  				<h3>Live Support</h3>
-  				<p><span>24 hours | 7 days a week | 365 days a year &nbsp;&nbsp; Live Technical Support</span></p>
-  				<p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+  				<h3>Kontakt</h3>
+  				<p>Aby się z nami skontaktować skorzystaj z poniższego formularza. Odpowiemy najszybciej jak to będzie możliwe!</p>
   			</div>
   				<img src="web/images/contact.png" alt="" />
   			<div class="clear"></div>
@@ -14,40 +13,41 @@
     	<div class="section group">
 				<div class="col span_2_of_3">
 				  <div class="contact-form">
-				  	<h2>Contact Us</h2>
-					    <form>
-					    	<div>
-						    	<span><label>NAME</label></span>
-						    	<span><input type="text" value=""></span>
-						    </div>
-						    <div>
-						    	<span><label>E-MAIL</label></span>
-						    	<span><input type="text" value=""></span>
-						    </div>
-						    <div>
-						     	<span><label>MOBILE.NO</label></span>
-						    	<span><input type="text" value=""></span>
-						    </div>
-						    <div>
-						    	<span><label>SUBJECT</label></span>
-						    	<span><textarea> </textarea></span>
-						    </div>
-						   <div>
-						   		<span><input type="submit" value="SUBMIT"></span>
-						  </div>
-					    </form>
+				  	<h2>Formularz kontaktowy</h2>
+					  <?php
+  if (isset($_REQUEST['email']))  {
+  //Email information
+  $admin_email = "lasondamian9@gmail.com";
+  $email = $_REQUEST['email'];
+  $subject = $_REQUEST['subject'];
+  $comment = $_REQUEST['comment'];
+  //send email
+  mail($admin_email, "$subject", $comment, "From:" . $email);
+  //Email response
+  echo "Wiadomość wysłana !!!";
+  }
+  //if "email" variable is not filled out, display the form
+  else  {
+?>
+ <form method="post">
+  Twój email: <input name="email" type="text" required/><br />
+  Temat: <input name="subject" type="text" required/><br />
+  Wiadomość:<br />
+  <textarea name="comment" rows="15" cols="40"></textarea><br />
+  <input type="submit" value="Wyślij" />
+  </form>
+<?php
+  }
+?>
 				  </div>
   				</div>
 				<div class="col span_1_of_3">
       			<div class="company_address">
-				     	<h2>Company Information :</h2>
-						    	<p>500 Lorem Ipsum Dolor Sit,</p>
-						   		<p>22-56-2-9 Sit Amet, Lorem,</p>
-						   		<p>USA</p>
-				   		<p>Phone:(00) 222 666 444</p>
+				     	<h2>Informacje</h2>
+						   		<p>Kraków, ul. Konwaliowa 12</p>
+				   		<p>Tel:(48) 123 456 789</p>
 				   		<p>Fax: (000) 000 00 00 0</p>
-				 	 	<p>Email: <span>info@mycompany.com</span></p>
-				   		<p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
+				 	 	<p>Email: <span>support@myagdmyrtv</span></p>
 				   </div>
 				 </div>
 			  </div>    	

@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                             <tr>
                                 <td> </td>
 
-                                <td><input type="submit" name="submit" value="Zapisz"> </td>
+                                <td><input type="submit" name="submit" value="Save Profile"> </td>
                             </tr>
 
 

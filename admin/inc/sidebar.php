@@ -2,7 +2,7 @@
     <div class="box sidemenu">
         <div class="block" id="section-menu">
             <ul class="section menu">
-               <!-- <li><a class="menuitem">Opcje</a>
+               <li><a class="menuitem">Opcje</a>
                     <ul class="submenu">
                          
                         <li><a href="social.php">Social Media</a></li>
@@ -17,7 +17,7 @@
                         <li><a href="slideradd.php">Add Slider</a> </li>
                         <li><a href="sliderlist.php">Slider List</a> </li>
                     </ul>
-                </li> -->
+                </li>
 
                 <li><a class="menuitem">Kategorie</a>
                     <ul class="submenu">

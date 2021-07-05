@@ -75,7 +75,7 @@ class Cart
                 header("Location:cart.php");
             
             } else {
-                $msg = "<span class= 'error'>Ilość nie została zaktualizowana</span>";
+                $msg = "<span class= 'error'>quantity  not updated</span>";
                 return $msg;
             }
 
@@ -87,7 +87,7 @@ class Cart
         if ($deldata) {
             echo "<script>window.location = 'cart.php'; </script>";
         } else {
-            $msg = "<span class='error'>Produkt nie został usunięty.</span> ";
+            $msg = "<span class='error'>Product Not Deleted .</span> ";
             return $msg; // return this Message 
         }
     }

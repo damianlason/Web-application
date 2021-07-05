@@ -22,16 +22,16 @@ class Category
     {
         
         if (empty($catName)) {
-            $msg = "<span class= 'error'>Pole nie może być puste</span>"; // validation for empty 
+            $msg = "<span class= 'error'>Category field cannot be !</span>"; // validation for empty 
             return $msg;
         } else {
             $query = "INSERT INTO tbl_category(catName) VALUES ('$catName') ";
             $catinsert = $this->db->insert($query);
             if ($catinsert) {
-                $msg = "<span class= 'success'>Kategoria została dodana</span>";
+                $msg = "<span class= 'success'>Category Inserted Successfully.</span>";
                 return $msg;
             } else {
-                $msg = "<span class= 'error'>Kategoria nie została dodana </span>";
+                $msg = "<span class= 'error'>Category  not Inserted Successfully.</span>";
                 return $msg;
             }
             // else its will insert data in to the database with insert query.
@@ -57,7 +57,7 @@ class Category
         $catName =  mysqli_real_escape_string($this->db->link, $catName); // Validation for mysqli   
         $id =  mysqli_real_escape_string($this->db->link, $id); // Validation for mysqli   
         if (empty($catName)) {
-            $msg = "<span class= 'error'>Pole nie może być puste</span>";
+            $msg = "<span class= 'error'>Category field must not be empty</span>";
             return $msg;
         } else {
             $query = "UPDATE tbl_category
@@ -66,10 +66,10 @@ class Category
             WHERE catId = '$id' ";
             $update_row =  $this->db->update($query);
             if ($update_row) {
-                $msg = "<span class= 'success'>Kategoria została zaktualizowana</span>";
+                $msg = "<span class= 'success'>Category has been updated</span>";
                 return $msg;
             } else {
-                $msg = "<span class= 'error'>Kategoria nie została zaktualizowana</span>";
+                $msg = "<span class= 'error'>Category not updated</span>";
                 return $msg;
             }
         }
@@ -79,10 +79,10 @@ class Category
         $query = "DELETE FROM tbl_category WHERE catId ='$id' ";
         $deldata = $this->db->delete($query);
         if ($deldata) {
-            $msg = "<span class='success'>Kategoria została usunięta</span> ";
+            $msg = "<span class='success'>Category Deleted Successfully.</span> ";
             return $msg; // return this Message 
         } else {
-            $msg = "<span class='error'>Kategoria nie  została usunięta</span> ";
+            $msg = "<span class='error'>Category Not Deleted .</span> ";
             return $msg; // return this Message 
         }
     }

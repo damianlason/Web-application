@@ -24,7 +24,7 @@ $cmr = new User();
 <!DOCTYPE HTML>
 
 <head>
-	<title>Store Website</title>
+	<title>Sklep</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -58,31 +58,33 @@ $cmr = new User();
 			<div class="header_top_right">
 				<div class="search_box">
 					<form action="search.php" method="get">
-						<input type="text" name="search" placeholder="Szukaj ">
+						<input type="text" name="search" placeholder="Szukaj produktu">
 						<input type= "submit" value= "Szukaj"> 
 					</form>
 				</div>
-				<div class="shopping_cart">
-					<div class="cart">
-						<a href="#" title="View my shopping cart" rel="nofollow">
-							<span class="cart_title">Koszyk</span>
-							<span class="no_product">
-								<?php
-								$getData = $ct->checkCartTable();
-								if ($getData) {
 
-									$sum = Session::get("sum");
-									$qty = Session::get("qty");
+					<div class="shopping_cart">
+						<div class="cart">
+							<a href="cart.php" title="View my shopping cart" rel="nofollow">
+								<span class="cart_title">Koszyk</span>
+								<span class="no_product">
+									<?php
+									$getData = $ct->checkCartTable();
+									if ($getData) {
 
-									echo  $sum . " PLN";
-								} else {
-									echo "(pusty)";
-								}
-								?>
-							</span>
-						</a>
+										$sum = Session::get("sum");
+										$qty = Session::get("qty");
+
+										echo  $sum . " PLN";
+									} else {
+										echo "(pusty)";
+									}
+									?>
+								</span>
+							</a>
+						</div>
 					</div>
-				</div>
+
 
 				<?php
 				if (isset($_GET['cid'])) {
@@ -98,11 +100,11 @@ $cmr = new User();
 					<?php
 					$login = Session::get("cuslogin");
 					if ($login == false) { ?>
-						<a href="login.php">Loguj</a>
+						 <a  href="login.php" >Zaloguj</a>
 
 					<?php } else { ?>
-						
-						
+
+
 						<a href="?cid=<?php Session::get('cmrId') ?>">Wyloguj</a> 
 
 
@@ -115,20 +117,22 @@ $cmr = new User();
 					
 
 				</div>
+
+
 				<div class="clear"></div>
 			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="menu">
 			<ul id="dc_mega-menu-orange" class="dc_mm-orange">
-				<li><a href="index.php">Główna</a></li>
+				<li><a href="index.php">Strona główna</a></li>
 				<li><a href="products.php">Produkty</a> </li>
 
 				<?php
 				  $chkCart = $ct->checkCartTable();
 				if ($chkCart) { ?>
 					<li><a href="cart.php">Koszyk</a></li>
-					<li><a href="payment.php">Platnosc</a></li>
+					<li><a href="payment.php">Płatność</a></li>
 
 				<?php } ?>
 
