@@ -58,8 +58,10 @@ $cmr = new User();
 			<div class="header_top_right">
 				<div class="search_box">
 					<form action="search.php" method="get">
-						<input type="text" name="search" placeholder="Szukaj produktu">
-						<input type= "submit" value= "Szukaj"> 
+
+						<input type="text" name="search" placeholder="Szukaj produktu" id="searchbar">
+						<input type= "submit" value= "Szukaj" id="searchbarbtn">
+
 					</form>
 				</div>
 
@@ -100,7 +102,9 @@ $cmr = new User();
 					<?php
 					$login = Session::get("cuslogin");
 					if ($login == false) { ?>
+
 						 <a  href="login.php" >Zaloguj</a>
+
 
 					<?php } else { ?>
 
@@ -128,13 +132,14 @@ $cmr = new User();
 				<li><a href="index.php">Strona główna</a></li>
 				<li><a href="products.php">Produkty</a> </li>
 
+
 				<?php
 				  $chkCart = $ct->checkCartTable();
 				if ($chkCart) { ?>
 					<li><a href="cart.php">Koszyk</a></li>
 					<li><a href="payment.php">Płatność</a></li>
 
-				<?php } ?>
+
 
 
 				<?php
@@ -145,6 +150,33 @@ $cmr = new User();
 
 
 				<li><a href="contact.php">Kontakt</a> </li>
+                <?php
+                $chkCart = $ct->checkCartTable();
+                if ($chkCart) { ?>
+
+                    <li><a href="payment.php">Płatność</a></li>
+                    <li><a href="cart.php">Koszyk</a></li>
+
+                <?php } ?>
 				<div class="clear"></div>
 			</ul>
 		</div>
+
+        <script>
+            let searchbar = document.querySelector('#searchbar');
+            let searchbarbtn = document.querySelector('#searchbarbtn');
+            searchbarbtn.disabled = true;
+            searchbarbtn.style.cursor = "not-allowed";
+            searchbar.addEventListener("input", searchBarBlock);
+            function searchBarBlock() {
+                console.log("changed");
+                if (searchbar.value === "") {
+                    searchbarbtn.disabled = true;
+                    searchbarbtn.style.cursor = "not-allowed";
+                } else {
+                    searchbarbtn.disabled = false;
+                    searchbarbtn.style.cursor = "pointer";
+
+                }
+            }
+        </script>

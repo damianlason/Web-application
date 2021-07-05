@@ -2,15 +2,10 @@
    	  <div class="wrapper">	
 	     <div class="section group">
 				 <div class="col_1_of_4 span_1_of_4">
-						<h4>Informacje</h4>
-						<ul>
-						<li><a href="#">O nas</a></li>
-						<li><a href="#">Customer Service</a></li>
-						<li><a href="#"><span>Advanced Search</span></a></li>
-						<li><a href="#">Orders and Returns</a></li>
-						<li><a href="contact.php"><span>Kontakt</span></a></li>
-						</ul>
-					</div>
+
+                     <a href="index.php"><img src="images/logonobg.png" alt="" /></a>
+                 </div>
+
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Why buy from us</h4>
 						<ul>
@@ -50,7 +45,9 @@
 				</div>
 			</div>
 			<div class="copy_right">
-                <p><span class="blue">Myagdmyrtv</span> &amp; All rights Reseverd </p>
+
+                <p><span class="blue">MYAGDMYRTV</span> &amp; ALL RIGHTS RESERVED ® </p>
+
 		   </div>
      </div>
     </div>

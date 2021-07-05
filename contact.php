@@ -14,6 +14,7 @@
 				<div class="col span_2_of_3">
 				  <div class="contact-form">
 				  	<h2>Formularz kontaktowy</h2>
+
 					  <?php
   if (isset($_REQUEST['email']))  {
   //Email information
@@ -39,6 +40,7 @@
 <?php
   }
 ?>
+
 				  </div>
   				</div>
 				<div class="col span_1_of_3">
