@@ -82,7 +82,7 @@ if (!isset($_GET['id'])) {
 									?> PLN
 
 								</td>
-								<td><a onclick="return confirm('Are you sure to delete');" href="
+								<td><a onclick="return confirm('Czy na pewno chcesz usunąć <?php echo strtolower($result['productName']);  ?>?');" href="
 								?delpro=<?php echo $result['cartId']; ?>">X</a></td>
 							</tr>
 							<?php
