@@ -92,7 +92,7 @@ body{
 }
 
 .shopping_cart{
-	float:left;
+	float:right;
 	width: 202px;
 	position:relative;
 	margin-left:15px;
@@ -142,7 +142,7 @@ input[type="number"] {
   padding: 7px;
 }
 .buysubmit{
-	background: #602d8d url("../images/large-button-overlay.png") repeat scroll 0 0;
+	background: rgb(64, 113, 172) url("../images/large-button-overlay.png") repeat scroll 0 0;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 	color: #fff;
@@ -166,7 +166,7 @@ input[type="number"] {
   box-sizing: border-box;
   color: #ffffff;
   display: block;
-  float: left;
+  float: right;
   font-size: 27px;
   height: 38px;
   margin-left: 10px;
@@ -512,7 +512,7 @@ p.note{
 		font-size:0.8em;
 		font-family: Arial, "Helvetica Neue", "Helvetica", Tahoma, Verdana, sans-serif;
 		border: 1px solid rgba(0,0,0,0.1);
-        background:#602D8D url(../images/large-button-overlay.png);       
+        background:rgb(64, 113, 172) url(../images/large-button-overlay.png);       
         color             : #fff;
         text-shadow:0 -1px 1px rgba(0, 0, 0, 0.25);
 		-moz-border-radius:5px;
@@ -675,7 +675,7 @@ p.note{
 .images_1_of_4 .button a{
 	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
 	font-size: 20px;
-	background: #0080ff;
+	background: rgb(64, 113, 172);
 	line-height: 15px;
 	text-transform: none;
 	color: black;
@@ -750,7 +750,9 @@ p.note{
 	padding:1.5%; 
 }
 .span_1_of_4  h4 {
-	color:#0080ff;
+
+	color:rgb(64, 113, 172);
+
 	margin-bottom: .5em;
 	font-size:1.2em;
 	line-height: 1.2;
@@ -1019,7 +1021,7 @@ p.note{
 }
 .product-desc h2,.product-tags h2{
 	padding:8px 20px;
-	background:#602D8D;
+	background:rgb(64, 113, 172);
 	border: 1px solid #EBE8E8;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -1409,7 +1411,7 @@ p.note{
   width: 100%;
 }
 .tblone th {
-  background: #0080ff none repeat scroll 0 0;
+  background: rgb(64, 113, 172) none repeat scroll 0 0;
   color: #fff;
   font-size: 20px;
   padding: 5px 8px;
@@ -1425,7 +1427,7 @@ table.tblone input[type="number"] {
   width: 60px;
 }
 table.tblone input[type="submit"] {
-  background: #0080ff none repeat scroll 0 0;
+  background: rgb(64, 113, 172) none repeat scroll 0 0;
   border: 1px solid #000;
   border-radius: 3px;
   color: #fff;
@@ -2483,17 +2485,17 @@ p.terms {
 }
 
 .images_1_of_4 .product-card .product-details .product-name{
-	color: #0080ff;
+	color: #CC3636 !important;
 }
 
 .blue{
-	color: #0080ff;
+	color: rgb(64, 113, 172);
 }
 
 .blue-button{
 	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
 	font-size: 20px;
-	background: #0080ff;
+	background: rgb(64, 113, 172);
 	line-height: 15px;
 	text-transform: none;
 	color: black;

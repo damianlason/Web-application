@@ -2,8 +2,10 @@
    	  <div class="wrapper">	
 	     <div class="section group">
 				 <div class="col_1_of_4 span_1_of_4">
+
                      <a href="index.php"><img src="images/logonobg.png" alt="" /></a>
                  </div>
+
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Why buy from us</h4>
 						<ul>
@@ -43,7 +45,9 @@
 				</div>
 			</div>
 			<div class="copy_right">
+
                 <p><span class="blue">MYAGDMYRTV</span> &amp; ALL RIGHTS RESERVED ® </p>
+
 		   </div>
      </div>
     </div>

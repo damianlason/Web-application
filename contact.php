@@ -14,27 +14,33 @@
 				<div class="col span_2_of_3">
 				  <div class="contact-form">
 				  	<h2>Formularz kontaktowy</h2>
-					    <form>
-					    	<div>
-						    	<span><label>IMIĘ</label></span>
-						    	<span><input onclick="" type="text" value=""></span>
-						    </div>
-						    <div>
-						    	<span><label>E-MAIL</label></span>
-						    	<span><input type="text" value=""></span>
-						    </div>
-						    <div>
-						     	<span><label>TELEFON</label></span>
-						    	<span><input type="text" value=""></span>
-						    </div>
-						    <div>
-						    	<span><label>WIADOMOŚĆ</label></span>
-						    	<span><textarea> </textarea></span>
-						    </div>
-						   <div>
-						   		<span><input class="blue-button" type="submit" value="WYŚLIJ"></span>
-						  </div>
-					    </form>
+
+					  <?php
+  if (isset($_REQUEST['email']))  {
+  //Email information
+  $admin_email = "lasondamian9@gmail.com";
+  $email = $_REQUEST['email'];
+  $subject = $_REQUEST['subject'];
+  $comment = $_REQUEST['comment'];
+  //send email
+  mail($admin_email, "$subject", $comment, "From:" . $email);
+  //Email response
+  echo "Wiadomość wysłana !!!";
+  }
+  //if "email" variable is not filled out, display the form
+  else  {
+?>
+ <form method="post">
+  Twój email: <input name="email" type="text" required/><br />
+  Temat: <input name="subject" type="text" required/><br />
+  Wiadomość:<br />
+  <textarea name="comment" rows="15" cols="40"></textarea><br />
+  <input type="submit" value="Wyślij" />
+  </form>
+<?php
+  }
+?>
+
 				  </div>
   				</div>
 				<div class="col span_1_of_3">

@@ -24,7 +24,7 @@ $cmr = new User();
 <!DOCTYPE HTML>
 
 <head>
-	<title>Store Website</title>
+	<title>Sklep</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -58,8 +58,10 @@ $cmr = new User();
 			<div class="header_top_right">
 				<div class="search_box">
 					<form action="search.php" method="get">
+
 						<input type="text" name="search" placeholder="Szukaj produktu" id="searchbar">
 						<input type= "submit" value= "Szukaj" id="searchbarbtn">
+
 					</form>
 				</div>
 
@@ -100,7 +102,9 @@ $cmr = new User();
 					<?php
 					$login = Session::get("cuslogin");
 					if ($login == false) { ?>
-						<a href="login.php">Zaloguj</a>
+
+						 <a  href="login.php" >Zaloguj</a>
+
 
 					<?php } else { ?>
 
@@ -127,6 +131,13 @@ $cmr = new User();
 			<ul id="dc_mega-menu-orange" class="dc_mm-orange">
 				<li><a href="index.php">Strona główna</a></li>
 				<li><a href="products.php">Produkty</a> </li>
+
+
+				<?php
+				  $chkCart = $ct->checkCartTable();
+				if ($chkCart) { ?>
+					<li><a href="cart.php">Koszyk</a></li>
+					<li><a href="payment.php">Płatność</a></li>
 
 
 

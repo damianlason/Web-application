@@ -89,7 +89,9 @@ if ($login == true){
 									</div>
 
 									<div>
+
 										<input type="text" name="pass" TABINDEX="8" placeholder="Hasło" />
+
 									</div>
 								</td>
 							</tr>
