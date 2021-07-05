@@ -7,23 +7,32 @@
                  </div>
 
 				<div class="col_1_of_4 span_1_of_4">
-					<h4>Why buy from us</h4>
+					<h4>Nawigacja</h4>
 						<ul>
-						<li><a href="about.phpw">About Us</a></li>
-						<li><a href="faq.php">Customer Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="contact.php"><span>Site Map</span></a></li>
-						<li><a href="preview.php"><span>Search Terms</span></a></li>
+                            <li><a href="index.php">Strona główna</a></li>
+                            <li><a href="products.php">Produkty</a></li>
+                            <li><a href="contact.php">Kontakt</a></li>
+                            <?php
+                            $chkCart = $ct->checkCartTable();
+                            if ($chkCart) { ?>
+                                <li><a href="cart.php">Koszyk</a></li>
+                                <li><a href="payment.php">Płatność</a></li>
+                            <?php } ?>
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
-					<h4>My account</h4>
+					<h4>Konto</h4>
 						<ul>
-							<li><a href="contact.php">Sign In</a></li>
-							<li><a href="index.php">View Cart</a></li>
-							<li><a href="#">My Wishlist</a></li>
-							<li><a href="#">Track My Order</a></li>
-							<li><a href="faq.php">Help</a></li>
+                            <?php
+                            $login = Session::get("cuslogin");
+                            if($login == true){ ?>
+                                <li><a href="profile.php">Profil</a></li>
+                                <li><a href="?cid=">Wyloguj</a></li>
+                            <?php
+                            }
+                            ?>
+
+
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
