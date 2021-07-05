@@ -33,7 +33,7 @@ include_once($filepath . '/../classes/Cart.php');
 
 
 						<tr class="odd gradeX">
-							<td><?php echo $result['id'];?></td>
+							<td><?php echo $result['cmrId'];?></td>
 							<td><?php echo $result['productName'];?></td>
 							<td><?php echo $result['quantity'];?></td>
 							<td><?php echo $result['price'];?></td>
