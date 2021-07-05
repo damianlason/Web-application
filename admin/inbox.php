@@ -13,6 +13,7 @@ include_once($filepath . '/../classes/Cart.php');
 					<thead>
 						<tr>
 							<th>Id klienta</th>
+							<th>Id zamowienia</th>
 							<th>Nazwa Produktu</th>
 							<th>Ilość </th>
 							<th>Cena </th>
@@ -34,6 +35,7 @@ include_once($filepath . '/../classes/Cart.php');
 
 						<tr class="odd gradeX">
 							<td><?php echo $result['cmrId'];?></td>
+							<td><?php echo $result['id'];?></td>
 							<td><?php echo $result['productName'];?></td>
 							<td><?php echo $result['quantity'];?></td>
 							<td><?php echo $result['price'];?></td>
