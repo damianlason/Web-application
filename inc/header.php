@@ -116,12 +116,7 @@ $cmr = new User();
         <li><a href="index.php">Strona główna</a></li>
         <li><a href="products.php">Produkty</a> </li>
 
-        <?php
-        $chkCart = $ct->checkCartTable();
-        if ($chkCart) { ?>
-        <li><a href="cart.php">Koszyk</a></li>
-        <li><a href="payment.php">Płatność</a></li>
-        <?php } ?>
+
 
 
 
