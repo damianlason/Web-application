@@ -82,7 +82,7 @@ if (!isset($_GET['id'])) {
 									?> PLN
 
 								</td>
-								<td><a onclick="return confirm('Are you sure to delete');" href="
+								<td><a onclick="return confirm('Czy na pewno chcesz usunąć <?php echo strtolower($result['productName']);  ?>?');" href="
 								?delpro=<?php echo $result['cartId']; ?>">X</a></td>
 							</tr>
 							<?php
@@ -132,11 +132,8 @@ if (!isset($_GET['id'])) {
 				} ?>
 			</div>
 			<div class="shopping">
-				<div class="shopleft">
-					<a href="index.php"> <img style="float: right;" src="images/shop.png" alt="" /></a>
-				</div>
 				<div class="shopright">
-					<a href="payment.php"> <img style="float: right;" src="images/check.png"  alt="" /></a>
+					<a href="order.php"> <img style="float: right;" src="images/check.png"  alt="" /></a>
 				</div>
 			</div>
 		</div>

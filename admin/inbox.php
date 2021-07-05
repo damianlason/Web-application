@@ -1,59 +1,48 @@
 ﻿<?php include 'inc/header.php';?>
 <?php include 'inc/sidebar.php';?>
+<?php
+$filepath = realpath(dirname(__FILE__));
+include_once($filepath . '/../classes/Cart.php');
+?>
+
         <div class="grid_10">
             <div class="box round first grid">
-                <h2>Inbox</h2>
+                <h2>Zamówienia</h2>
                 <div class="block">        
                     <table class="data display datatable" id="example">
 					<thead>
 						<tr>
-							<th>Serial No.</th>
-							<th>Message</th>
-							<th>Action</th>
+							<th>Id klienta</th>
+							<th>Nazwa Produktu</th>
+							<th>Ilość </th>
+							<th>Cena </th>
 						</tr>
 					</thead>
 					<tbody>
+						<?php
+						$ct= new Cart();
+						$fm = new Format();
+						$getOrder = $ct->getAllOrderProduct();
+						if ($getOrder){
+							while ($result = $getOrder->fetch_assoc()){
+
+							
+						
+						?>
+
+
+
 						<tr class="odd gradeX">
-							<td>01</td>
-							<td>Internet</td>
-							<td><a href="">Edit</a> || <a href="">Delete</a></td>
+							<td><?php echo $result['id'];?></td>
+							<td><?php echo $result['productName'];?></td>
+							<td><?php echo $result['quantity'];?></td>
+							<td><?php echo $result['price'];?></td>
+
+
+							<!-- <td><a href="">Wykonane</a> -->
 						</tr>
-						<tr class="even gradeC">
-							<td>02</td>
-							<td>Explorer </td>
-							<td><a href="">Edit</a> || <a href="">Delete</a></td>
-						</tr>
-						<tr class="odd gradeX">
-							<td>03</td>
-							<td>Internet</td>
-							<td><a href="">Edit</a> || <a href="">Delete</a></td>
-						</tr>
-						<tr class="even gradeC">
-							<td>04</td>
-							<td>Explorer </td>
-							<td><a href="">Edit</a> || <a href="">Delete</a></td>
-						</tr>
-							<tr class="odd gradeX">
-							<td>05</td>
-							<td>Internet</td>
-							<td><a href="">Edit</a> || <a href="">Delete</a></td>
-						</tr>
-						<tr class="even gradeC">
-							<td>06</td>
-							<td>Explorer </td>
-							<td><a href="">Edit</a> || <a href="">Delete</a></td>
-						</tr>
-						<tr class="odd gradeX">
-							<td>07</td>
-							<td>Internet</td>
-							<td><a href="">Edit</a> || <a href="">Delete</a></td>
-						</tr>
-						<tr class="even gradeC">
-							<td>08</td>
-							<td>Explorer </td>
-							<td><a href="">Edit</a> || <a href="">Delete</a></td>
-						</tr>
-					</tbody>
+							<?php } } ?>
+						
 				</table>
                </div>
             </div>

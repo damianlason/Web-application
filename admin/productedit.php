@@ -43,7 +43,7 @@ if (isset($updateProduct)) {  // Show update data message
                
                 <tr>
                     <td>
-                        <label>Name</label>
+                        <label>Nazwa</label>
                     </td>
                     <td>
   <input type="text" name="productName" value="<?php echo $value['productName']; ?>" class="medium" />
@@ -51,11 +51,11 @@ if (isset($updateProduct)) {  // Show update data message
                 </tr>
 				<tr>
                     <td>
-                        <label>Category</label>
+                        <label>Kategoria</label>
                     </td>
                     <td>
                         <select id="select" name="catId">
-                            <option>Select Category</option>
+                            <option>Wybierz kategorię</option>
                  <?php
                     $cat = new Category();
                     $getCat =  $cat->getAllCat();
@@ -79,11 +79,11 @@ if (isset($updateProduct)) {  // Show update data message
                 </tr>
 				<tr>
                     <td>
-                        <label>Brand</label>
+                        <label>Marka</label>
                     </td>
                     <td>
                         <select id="select" name="brandId">
-                            <option>Select Brand</option>
+                            <option>Wybierz markę</option>
  
  <?php
                     $brand = new Brand();
@@ -105,7 +105,7 @@ if (isset($updateProduct)) {  // Show update data message
 				
 				 <tr>
                     <td style="vertical-align: top; padding-top: 9px;">
-                        <label>Description</label>
+                        <label>Opis</label>
                     </td>
                     <td>
                         <textarea class="tinymce" name="body">
@@ -116,7 +116,7 @@ if (isset($updateProduct)) {  // Show update data message
                 </tr>
 				<tr>
                     <td>
-                        <label>Price</label>
+                        <label>Cena</label>
                     </td>
                     <td>
                         <input type="text" name="price" value="<?php echo  $value['price']; ?>" class="medium" />
@@ -125,7 +125,7 @@ if (isset($updateProduct)) {  // Show update data message
             
                 <tr>
                     <td>
-                        <label>Upload Image</label>
+                        <label>Obrazek</label>
                     </td>
                     <td>
                         <img src="<?php echo $value['image'];?>" height="60px; width="80px;"><br/>
@@ -135,19 +135,19 @@ if (isset($updateProduct)) {  // Show update data message
 				
 				<tr>
                     <td>
-                        <label>Product Type</label>
+                        <label>Typ produktu</label>
                     </td>
                     <td>
                         <select id="select" name="type">
-                            <option>Select Type</option>
+                            <option>Wybierz typ produktu</option>
                           <?php
                         if ($value['type'] == 0) { ?>
-                           <option selected = "selected" value="0">Featured</option>
-                            <option value="1">General</option>
+                           <option selected = "selected" value="0">Polecany</option>
+                            <option value="1">Główny</option>
                        <?php } else {  ?>
  
-                            <option value="0">Featured</option>
-                            <option selected = "selected" value="1">General</option>
+                            <option value="0">Polecany</option>
+                            <option selected = "selected" value="1">Główny</option>
                         <?php }  ?>
                         </select>
                     </td>
@@ -156,7 +156,7 @@ if (isset($updateProduct)) {  // Show update data message
 				<tr>
                     <td></td>
                     <td>
-                        <input type="submit" name="submit" Value="Update" />
+                        <input type="submit" name="submit" Value="Zapisz" />
                     </td>
                 </tr>
             </table>
