@@ -17,11 +17,13 @@
 
 					<div class="grid_1_of_4 images_1_of_4">
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">
-							<img src="admin/<?php echo $result['image']; ?>" alt="" /></a>
+                            <div class="product-details">
+							<img class="product-image" src="admin/<?php echo $result['image']; ?>" alt="" class="productImage"/></a>
 						<h2><?php echo $result['productName']; ?> </h2>
 						<p><?php echo $fm->textShorten($result['body'], 60); ?></p>
 						<p><span class="price"><?php echo $result['price']; ?> PLN</span></p>
 						<div class="button"><span><a href="preview.php?proid=<?php echo $result['productId']; ?>" class="details">Szczegóły</a></span></div>
+                    </div>
 					</div>
 
 			<?php  }
@@ -39,4 +41,5 @@
     </div>
  </div>
 </div>
+
 <?php include 'inc/footer.php'; ?>

@@ -26,9 +26,7 @@ body{
 	background:url(../images/body_bg3.jpg);
 }
 .wrap{
-	width:78%;
-	margin:0 auto;
-	padding:0 1%;
+	max-width: 100%;
 	background:#FFF;
 }
 .header{
@@ -39,7 +37,7 @@ body{
 }
 .logo{
 	float:left;
-	width:33%;
+	width:10%;
 }
 /**** Header Top Right ****/
 .header_top_right{
@@ -52,6 +50,10 @@ body{
 	border: 1px solid #DBDBDB;
 	position:relative;
 	width:47%;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 30px;
 }
 .search_box input[type="text"]{
 	width:74%;
@@ -59,12 +61,14 @@ body{
 	outline:none;
 	border:none;
 	background:none;
-	font-size:14px;
-	color:#a5a5a5;
+	font-size:17px;
+	color: black;
+	font-weight: bold;
 	font-family:Arial;
 	outline:none;
 	margin:0;
 }
+
 .search_box input[type="submit"]{
 	border:none;
 	cursor:pointer;
@@ -86,9 +90,7 @@ body{
 	right:0;
 	top:0;
 }
-.search_box input[type="submit"]:hover{
-	background:#444;
-}
+
 .shopping_cart{
 	float:left;
 	width: 202px;
@@ -106,7 +108,7 @@ body{
 	height: 38px;
 	padding: 0 0 0 10px;
 	background: #EDEDED;
-	border: 1px solid #CECECE;
+	border: 1px sol70389C;
 	border-left: none;
 	line-height: 36px;
 	-webkit-border-radius: 0 2px 2px 0;
@@ -158,11 +160,11 @@ input[type="number"] {
 	z-index: 1;
 	background: #70389C;
 }
-.login {
-  background: rgba(0, 0, 0, 0) url("../images/gradient_light-1.png") repeat-x scroll 0 0;
-  border: 1px solid #cecece;
+.login{
+  border-radius: 12px;
+  background: #0080ff;
   box-sizing: border-box;
-  color: #444;
+  color: #ffffff;
   display: block;
   float: left;
   font-size: 27px;
@@ -170,9 +172,14 @@ input[type="number"] {
   margin-left: 10px;
   text-align: center;
   width: 144px;
+  transition: all 0.5s ease;
 }
-.login a {
-	color:#333;
+
+.login a{
+	color: #FFFFFF;
+}
+.login:hover{
+	background: #70389C;
 }
 /*** Login ***/
 .register_account h3,.login_panel h3{
@@ -534,24 +541,21 @@ p.note{
 }
 .content_top{
 	padding:15px 20px;
-	border:1px solid #EBE8E8;
 	border-radius:3px;
 }
 .content_bottom{
 	padding:15px 20px;
-	border:1px solid #EBE8E8;
 	border-radius:3px;
 	margin-top:2.6%;
 }
-.heading{
-	float:left;
-	margin-right:10%;
-}
+
 .heading h3{
+	color: #370b5b;
 	font-family: 'Monda', sans-serif;
-	font-size:22px;
-	color:#602D8D;
+	font-size:38px;
 	text-transform:uppercase;
+	text-align: center;
+	font-weight: 500;
 }
 .sort,.show{
 	float:left;
@@ -602,8 +606,14 @@ p.note{
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
-	box-shadow: 0px 0px 3px rgb(150, 150, 150);
+	box-shadow: 0px 0px 3px #0080ff;
+	transition: all 0.8s ease;
 }
+
+.grid_1_of_4:hover{
+	box-shadow: 1px 1px 5px #70389C;
+}
+
 .grid_1_of_4:first-child { 
 	margin-left: 0; 
 } 
@@ -664,30 +674,26 @@ p.note{
 }
 .images_1_of_4 .button a{
 	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
-	font-size: 14px;
+	font-size: 20px;
+	background: #0080ff;
 	line-height: 15px;
 	text-transform: none;
-	color: #737370;
+	color: black;
 	text-decoration: none!important;
-	background: url(../images/button-bg.png) repeat-x 0 0 #E8E8E8;
 	display: inline-block;
-	border-left: 1px solid #D4D4D4!important;
-	border-right: 1px solid #ADADAD!important;
-	border-top: 1px solid #E0E0E0!important;
-	border-bottom: 1px solid #9C9C9C!important;
 	cursor: pointer!important;
 	margin: 0 2px;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
 	-webkit-transition: all 0.5s ease;
 		-moz-transition: all 0.5s ease;
 		-o-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 }
 .images_1_of_4 .button a:hover{
-     color:#70389C;
-     background: #E8E8E8;
+     color:white;
+     background: #70389C;
 }
 .images_1_of_4 .button span img{
 	position:absolute;
@@ -744,7 +750,7 @@ p.note{
 	padding:1.5%; 
 }
 .span_1_of_4  h4 {
-	color:#ccc;
+	color:#0080ff;
 	margin-bottom: .5em;
 	font-size:1.2em;
 	line-height: 1.2;
@@ -1403,7 +1409,7 @@ p.note{
   width: 100%;
 }
 .tblone th {
-  background: #666 none repeat scroll 0 0;
+  background: #0080ff none repeat scroll 0 0;
   color: #fff;
   font-size: 20px;
   padding: 5px 8px;
@@ -1419,7 +1425,7 @@ table.tblone input[type="number"] {
   width: 60px;
 }
 table.tblone input[type="submit"] {
-  background: #333 none repeat scroll 0 0;
+  background: #0080ff none repeat scroll 0 0;
   border: 1px solid #000;
   border-radius: 3px;
   color: #fff;
@@ -1483,27 +1489,21 @@ table.tblone img {
 			-o-box-shadow: inset 0px 0px 3px #999;
 			-webkit-appearance:none;
 }
+
+.contact-form input[type="text"]:focus,.contact-form textarea:focus{
+	border: 1px solid #0080ff;
+}
 .contact-form textarea{
 		resize:none;
 		height:120px;		
 }
 .contact-form input[type="submit"]{
-	padding:7px 25px;
-	cursor:pointer;
-	background:#FFF url(../images/large-button-overlay.png);
-    font-family:Arial, Helvetica, sans-serif;
     position:absolute;
     right:0;
-    border: 1px solid #ccc;
-	color: #555 !important;
-	font-size:1em;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+	height: 45px;
+	width: 100px;
 }
-.contact-form input[type="submit"]:hover{
-	background-color: #EEE;
-	border-color: #B8B5B5;
-	color: #444 !important;
-}
+
 .contact-form input[type="submit"]:active{
 	background-color:#FFF;  
 }
@@ -1544,9 +1544,7 @@ table.tblone img {
     .list_2_of_1 .button a {
     	padding:5px 10px;
     }
-    .heading {
-    	margin-right:2%;
-    }
+
     .sort, .show {
     	width:20%;
     }
@@ -1654,9 +1652,7 @@ p.terms {
     .list_2_of_1 .button a {
     	padding:5px 10px;
     }
-    .heading {
-    	margin-right:0%;
-    }
+
     .sort, .show {
     	width:24%;
     }
@@ -1927,10 +1923,7 @@ p.terms {
      .content_top {
     	padding:15px 10px;
     }
-    .heading {
-    	margin-right:0%;
-    	width:100%;
-    }
+
     .sort{
     	width:31%;
     	margin-left:0;
@@ -2474,4 +2467,50 @@ p.terms {
 		width:92%;
 		padding:4%;
 	}
+}
+
+.product-card{
+	max-width: 100%;
+	min-height: 600px;
+}
+
+.product-image{
+	min-height: 360px;
+}
+
+.product-details{
+	margin-top: 100px;
+}
+
+.images_1_of_4 .product-card .product-details .product-name{
+	color: #0080ff;
+}
+
+.blue{
+	color: #0080ff;
+}
+
+.blue-button{
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 20px;
+	background: #0080ff;
+	line-height: 15px;
+	text-transform: none;
+	color: black;
+	text-decoration: none !important;
+	display: inline-block;
+	cursor: pointer !important;
+	margin: 0 2px;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.blue-button:hover{
+	color: white;
+	background: #70389C;
 }

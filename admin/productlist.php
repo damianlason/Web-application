@@ -42,15 +42,15 @@ $fm = new Format();
             <table class="data display datatable" id="example">
 			<thead>
 				<tr>
-					<th>Serial Number</th>
-					<th>Product Name</th>
-					<th>Category</th>
-					<th>Brand</th>
-					<th>Description</th>
-					<th>Price</th>
-					<th>Image</th>
-					<th>Type</th> 
-					<th>Action</th>
+					<th>Lp</th>
+					<th>Nazwa</th>
+					<th>Kategoria</th>
+					<th>Firma</th>
+					<th>Opis</th>
+					<th>Cena</th>
+					<th>Zdjęcie</th>
+					<th>Typ</th>
+					<th></th>
 				</tr>
 
 			</thead>

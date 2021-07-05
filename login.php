@@ -32,7 +32,7 @@ if ($login == true){
 
 			<form action=" " method="post">
 				<input name="email" placeholder="Email" type="text">
-				<input name="pass" placeholder="Password" type="pasword">
+				<input name="pass" placeholder="Password" type="password">
 				<div class="buttons"><div><button class="grey" name="login">Zaloguj</button></div>
 			</div>
 			</form>
@@ -53,9 +53,7 @@ if ($login == true){
 		?>
 
 
-
-
-		<div class="register_account">
+<div class="register_account">
 			<h3>Rejestracja</h3>
 			<form action=" " method="post">
 				<form>
@@ -64,34 +62,34 @@ if ($login == true){
 							<tr>
 								<td>
 									<div>
-										<input type="text" name="nameAndSurname" placeholder="Imię i Nazwisko" />
+										<input type="text" name="nameAndSurname" TABINDEX="1" placeholder="Imię i Nazwisko" />
 									</div>
 
 									<div>
-										<input type="text" name="city" placeholder="Miasto" />
+										<input type="text" name="city" TABINDEX="3" placeholder="Miasto" />
 									</div>
 
 									<div>
-										<input type="text" name="zip" placeholder="Kod pocztowy" />
+										<input type="text" name="zip" TABINDEX="5" placeholder="Kod pocztowy" />
 									</div>
 									<div>
-										<input type="text" name="email" placeholder="Email" />
+										<input type="text" name="email" TABINDEX="7" placeholder="Email" />
 									</div>
 								</td>
 								<td>
 									<div>
-										<input type="text" name="address" placeholder="Adres" />
+										<input type="text" name="address" TABINDEX="2" placeholder="Adres" />
 									</div>
 									<div>
-										<input type="text" name="country" placeholder="Kraj" />
-									</div>
-
-									<div>
-										<input type="text" name="phone" placeholder="Telefon" />
+										<input type="text" name="country" TABINDEX="4" placeholder="Kraj" />
 									</div>
 
 									<div>
-										<input type="text" name="pass" placeholder="hasło" />
+										<input type="text" name="phone" TABINDEX="6" placeholder="Telefon" />
+									</div>
+
+									<div>
+										<input type="text" name="pass" TABINDEX="8" placeholder="Hasło" />
 									</div>
 								</td>
 							</tr>
@@ -100,10 +98,11 @@ if ($login == true){
 					<div class="search">
 						<div><button class="grey" name="register">Utwórz konto</button></div>
 					</div>
-					<p class="terms">Klikając "Utwórz konto" zgadzasz się na przetwarzanie danych <a href="#">Terms &amp; Conditions</a>.</p>
 					<div class="clear"></div>
 				</form>
 		</div>
+
+
 		<div class="clear"></div>
 	</div>
 </div>
