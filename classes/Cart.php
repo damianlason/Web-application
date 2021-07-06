@@ -118,9 +118,10 @@ class Cart
                 $quantity      = $result['quantity'];
                 $price         = $result['price'];
                 $image         = $result['image'];
+                $date = $result['date'];
 
-                $query = "INSERT INTO tbl_order(cmrId, productId, productName, quantity, price, image) 
-                VALUES ('$cmrId','$productId','$productName','$quantity','$price','$image')";
+                $query = "INSERT INTO tbl_order(cmrId, productId, productName, quantity, price, image, date) 
+                VALUES ('$cmrId','$productId','$productName','$quantity','$price','$image', Now())";
 
                 $inserted_row = $this->db->insert($query);
             }
@@ -128,10 +129,17 @@ class Cart
         
     }
     public function getAllOrderProduct() {
-    $query = "SELECT * FROM tbl_order  ORDER BY price";
+    $query = " 
+    SELECT *
+    FROM tbl_order
+    INNER JOIN tbl_customer
+       ON tbl_order.cmrId = tbl_customer.id";
+    
     $result = $this->db->select($query);
     return $result;
     }
+    
+    
 }
 
 ?>

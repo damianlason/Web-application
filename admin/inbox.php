@@ -16,7 +16,8 @@ include_once($filepath . '/../classes/Cart.php');
 							<th>Id zamowienia</th>
 							<th>Nazwa Produktu</th>
 							<th>Ilość </th>
-							<th>Cena </th>
+							<th>Cena za sztukę</th>
+							<th>Data zamówienia </th>
 						</tr>
 					</thead>
 					<tbody>
@@ -34,11 +35,12 @@ include_once($filepath . '/../classes/Cart.php');
 
 
 						<tr class="odd gradeX">
-							<td><?php echo $result['cmrId'];?></td>
+							<td><?php echo $result['nameAndSurname'];?></td>
 							<td><?php echo $result['id'];?></td>
 							<td><?php echo $result['productName'];?></td>
 							<td><?php echo $result['quantity'];?></td>
 							<td><?php echo $result['price'];?></td>
+							<td><?php echo $result['date'];?></td>
 
 
 							<!-- <td><a href="">Wykonane</a> -->
