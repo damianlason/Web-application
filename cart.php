@@ -133,7 +133,7 @@ if (!isset($_GET['id'])) {
 			</div>
 			<div class="shopping">
 				<div class="shopright">
-					<a href="payment.php"> <img style="float: right;" src="images/check.png"  alt="" /></a>
+					<a href="order.php"> <img style="float: right;" src="images/check.png"  alt="" /></a>
 				</div>
 			</div>
 		</div>

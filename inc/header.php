@@ -132,7 +132,9 @@ $cmr = new User();
         $chkCart = $ct->checkCartTable();
         if ($chkCart) { ?>
 
-            <li><a href="payment.php">Płatność</a></li>
+
+            <li><a href="order.php">Zamówienie</a></li>
+
             <li><a href="cart.php">Koszyk</a></li>
 
         <?php } ?>

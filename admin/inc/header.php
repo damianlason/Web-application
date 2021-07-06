@@ -84,7 +84,7 @@ Session::checkSession();
         <div class="grid_12">
             <ul class="nav main">
                 <li class="ic-dashboard"><a href="dashboard.php"><span>Panel administracyjny</span></a> </li>
-                <li class="ic-form-style"><a href=""><span>Profil użytkownika</span></a></li>
+
 		
 				<li class="ic-grid-tables"><a href="inbox.php"><span>Zamówienia</span></a></li>
                 <li class="ic-charts"><a href="../index.php"><span>Strona główna</span></a></li>
