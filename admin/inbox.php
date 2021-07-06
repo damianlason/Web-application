@@ -16,8 +16,9 @@ include_once($filepath . '/../classes/Cart.php');
 							<th>Id zamowienia</th>
 							<th>Nazwa Produktu</th>
 							<th>Ilość </th>
-							<th>Cena za sztukę</th>
+							<th>Do zapłaty</th>
 							<th>Data zamówienia </th>
+							<th>Adres </th>
 						</tr>
 					</thead>
 					<tbody>
@@ -39,8 +40,9 @@ include_once($filepath . '/../classes/Cart.php');
 							<td><?php echo $result['id'];?></td>
 							<td><?php echo $result['productName'];?></td>
 							<td><?php echo $result['quantity'];?></td>
-							<td><?php echo $result['price'];?></td>
+							<td><?php echo $result['price']*$result['quantity'];?> PLN</td>
 							<td><?php echo $result['date'];?></td>
+							<td><?php echo $result['address'];?></td>
 
 
 							<!-- <td><a href="">Wykonane</a> -->

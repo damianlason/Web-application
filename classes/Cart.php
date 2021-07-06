@@ -126,20 +126,18 @@ class Cart
                 $inserted_row = $this->db->insert($query);
             }
         }
-        
     }
-    public function getAllOrderProduct() {
-    $query = " 
+    public function getAllOrderProduct()
+    {
+        $query = " 
     SELECT *
     FROM tbl_order
     INNER JOIN tbl_customer
        ON tbl_order.cmrId = tbl_customer.id";
-    
-    $result = $this->db->select($query);
-    return $result;
+
+        $result = $this->db->select($query);
+        return $result;
     }
-    
-    
 }
 
 ?>
