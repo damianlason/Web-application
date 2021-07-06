@@ -12,6 +12,7 @@ include_once($filepath . '/../classes/Cart.php');
                     <table class="data display datatable" id="example">
 					<thead>
 						<tr>
+
 							<th>Id klienta</th>
 							<th>Id zamowienia</th>
 							<th>Nazwa Produktu</th>
@@ -19,6 +20,7 @@ include_once($filepath . '/../classes/Cart.php');
 							<th>Do zapłaty</th>
 							<th>Data zamówienia </th>
 							<th>Adres </th>
+
 						</tr>
 					</thead>
 					<tbody>
