@@ -145,8 +145,8 @@
  
      </div>
  </div>
-   <div class="ordernow"> <input type="button" class="ordernoww" href="?orderid=order"> Zamów </a></div>
- 
+   <div class="ordernow"> <a href="?orderid=order"> Zamów </a></div>
+
 </div>
    
     <?php include 'inc/footer.php'; ?>

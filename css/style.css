@@ -570,21 +570,6 @@ p.note{
 	border-radius:3px;
 	margin-top:2.6%;
 }
-.main .content .ordernow .ordernoww{
-	border-radius: 12px;
-	background: #4071ac;
-	box-sizing: border-box;
-	color: #ffffff;
-	display: block;
-	float: right;
-	font-size: 27px;
-	height: 38px;
-	margin-top: -65px;
-	margin-right: -240px;
-	text-align: center;
-	width: 210px;
-	transition: all 0.5s ease;
-}
 .heading h3{
 	color: #370b5b;
 	font-family: 'Monda', sans-serif;
