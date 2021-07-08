@@ -11,7 +11,8 @@ ul.dc_mm-orange{
 	width:100%;
 }
 ul.dc_mm-orange li ul{
-	display:none;
+	display:block;
+	float: center;
 }
 ul.dc_mm-orange .sub{
 	display:none;
@@ -20,9 +21,7 @@ ul.dc_mm-orange .sub ul{
 	display:block;
 }
 ul.dc_mm-orange li{
-  float:left;
-  margin:0;
-  padding:0;
+  	float:left;
 }
 ul.dc_mm-orange li a{
 	color:#fff;
@@ -39,7 +38,7 @@ ul.dc_mm-orange li a{
 ul.dc_mm-orange li a.dc-mega{
 	position:relative;
 }
-ul.dc_mm-orange li a .dc-mega-icon{
+ ul.dc_mm-orange li a .dc-mega-icon{
 	background:url(../images/down-arrow.png) no-repeat 0 0;
 	display:block;
 	height:6px;
@@ -50,8 +49,9 @@ ul.dc_mm-orange li a .dc-mega-icon{
 }
 ul.dc_mm-orange li.mega-hover a,ul.dc_mm-orange li a:hover{
 	color: #FFF;
-	background: #370b5b;
+	background: #602D8D;
 }
+
 ul.dc_mm-orange li .sub-container{
 	background:#F0F0F0;
 	margin-left:-3px;
@@ -146,6 +146,7 @@ ul.dc_mm-orange li .sub-container.non-mega li a:hover{
 	ul.dc_mm-orange li a {
 		padding:20px 24px;
 	}
+
 }
 @media only screen and (max-width:1024px) {
 	ul.dc_mm-orange li a {
@@ -173,8 +174,8 @@ ul.dc_mm-orange li .sub-container.non-mega li a:hover{
  	height:20px;
  	
  }
- }
- @media only screen and (max-width:640px) {
+ } 
+@media only screen and (max-width:640px) {
  	ul.dc_mm-orange li a {
 		padding:20px 8.5px;
 		font-size:0.96em;
@@ -188,8 +189,8 @@ ul.dc_mm-orange li .sub-container.non-mega li a:hover{
 	ul.dc_mm-orange li a .dc-mega-icon {
 		display:none;
 	}	
- }
-  @media only screen and (max-width:480px) {
+ } 
+@media only screen and (max-width:480px) {
  	ul.dc_mm-orange li a {
 		padding:20px 4.66px;
 		font-size:0.8em;
@@ -207,3 +208,11 @@ ul.dc_mm-orange li .sub-container.non-mega li a:hover{
 		display:none;
 	}	
  }
+ .leftmenu{
+	height: 59px;
+	width: 30%;
+	float:left;
+	margin: 0 auto;
+    text-align: center;
+ } 
+

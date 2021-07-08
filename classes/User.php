@@ -110,10 +110,10 @@ class User
                 WHERE id    = '$cmrId' "; 
                 $update_row  = $this->db->update($query);
                 if ($update_row) {
-                    $msg = "<span class='success'>Customer Data Updated Successfully.</span> ";
+                    $msg = "<span class='success'>Dane profilu zostały zaktualizowane.</span> ";
                     return $msg;// return some message
                 }else {
-                    $msg = "<span class='error'>Customer Data Not Updated .</span> ";
+                    $msg = "<span class='error'>Dane profilu nie zostały zaktualizowane</span> ";
                     return $msg; // return some message 
                 }
           }

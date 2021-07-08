@@ -53,14 +53,14 @@ $cmr = new User();
 <div class="wrap">
     <div class="header_top">
         <div class="logo">
-            <a href="index.php"><img src="images/logo.png" alt="" /></a>
+            <a href="index.php"><img src="images/newlogo.png" alt="" /></a>
         </div>
         <div class="header_top_right">
             <div class="search_box">
-                <form action="search.php" method="get">
+                <form class="formtextbar" action="search.php" method="get">
 
-                    <input type="text" name="search" placeholder="Szukaj produktu" id="searchbar">
-                    <input type= "submit" value= "Szukaj" id="searchbarbtn">
+                    <input type="text" name="search" placeholder="Szukaj produktu" id="searchbar" class="searchbartxt">
+                    <input type= "submit" value= "Szukaj" id="searchbarbtn" class="searchbarbtn">
 
                 </form>
             </div>
@@ -112,13 +112,11 @@ $cmr = new User();
 
 
 <div class="menu">
-    <ul id="dc_mega-menu-orange" class="dc_mm-orange">
-        <li><a href="index.php">Strona główna</a></li>
-        <li><a href="products.php">Produkty</a> </li>
-
-
-
-
+    <div class=leftmenu></div>
+    <div class="mainmenu">
+        <ul id="dc_mega-menu-orange" class="dc_mm-orange">
+            <li><a href="index.php" >Strona główna</a></li>
+            <li><a href="products.php" >Produkty</a> </li>
 
         <?php
         $login = Session::get("cuslogin");
@@ -126,18 +124,19 @@ $cmr = new User();
             <li><a href="profile.php">Profil</a></li>
         <?php		} ?>
 
-
         <li><a href="contact.php">Kontakt</a> </li>
         <?php
         $chkCart = $ct->checkCartTable();
         if ($chkCart) { ?>
 
             <li><a href="order.php">Zamówienie</a></li>
-            <li><a href="cart.php">Koszyk</a></li>
+            <li> <a href="cart.php">Koszyk</a></li>
 
         <?php } ?>
         <div class="clear"></div>
-    </ul>
+        </ul>
+        
+        </div>
 </div>
 
 
