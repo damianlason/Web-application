@@ -12,13 +12,14 @@ include_once($filepath . '/../classes/Cart.php');
                     <table class="data display datatable" id="example">
 					<thead>
 						<tr>
-							<th>Id klienta</th>
+							<th>Zamawiający</th>
 							<th>Id zamowienia</th>
 							<th>Nazwa Produktu</th>
 							<th>Ilość </th>
 							<th>Do zapłaty</th>
 							<th>Data zamówienia </th>
 							<th>Adres </th>
+							<th>Status zamówienia </th>
 						</tr>
 					</thead>
 					<tbody>
@@ -45,7 +46,9 @@ include_once($filepath . '/../classes/Cart.php');
 							<td><?php echo $result['address'];?></td>
 
 
-							<!-- <td><a href="">Wykonane</a> -->
+							<td><a href=""><input type="checkbox" id="scales" name="Zrealizowane"
+         unchecked>
+  
 						</tr>
 							<?php } } ?>
 						
